@@ -1,32 +1,38 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "617bd776788e104133a70633df90cb07",
     "packages": [
         {
             "name": "composer/ca-bundle",
-            "version": "1.1.0",
+            "version": "1.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/ca-bundle.git",
-                "reference": "943b2c4fcad1ef178d16a713c2468bf7e579c288"
+                "reference": "10bb96592168a0f8e8f6dcde3532d9fa50b0b527"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/943b2c4fcad1ef178d16a713c2468bf7e579c288",
-                "reference": "943b2c4fcad1ef178d16a713c2468bf7e579c288",
-                "shasum": ""
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/10bb96592168a0f8e8f6dcde3532d9fa50b0b527",
+                "reference": "10bb96592168a0f8e8f6dcde3532d9fa50b0b527",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "ext-openssl": "*",
                 "ext-pcre": "*",
-                "php": "^5.3.2 || ^7.0"
+                "php": "^5.3.2 || ^7.0 || ^8.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8.35",
+                "phpunit/phpunit": "^4.8.35 || ^5.7 || 6.5 - 8",
                 "psr/log": "^1.0",
                 "symfony/process": "^2.5 || ^3.0 || ^4.0"
             },
@@ -60,36 +66,45 @@
                 "ssl",
                 "tls"
             ],
-            "time": "2017-11-29T09:37:33+00:00"
+            "time": "2019-08-30T08:44:50+00:00"
         },
         {
             "name": "composer/composer",
-            "version": "1.6.2",
+            "version": "1.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "db191abd24b0be110c98ba2271ca992e1c70962f"
+                "reference": "bb01f2180df87ce7992b8331a68904f80439dd2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/db191abd24b0be110c98ba2271ca992e1c70962f",
-                "reference": "db191abd24b0be110c98ba2271ca992e1c70962f",
-                "shasum": ""
+                "url": "https://api.github.com/repos/composer/composer/zipball/bb01f2180df87ce7992b8331a68904f80439dd2f",
+                "reference": "bb01f2180df87ce7992b8331a68904f80439dd2f",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "composer/ca-bundle": "^1.0",
                 "composer/semver": "^1.0",
                 "composer/spdx-licenses": "^1.2",
+                "composer/xdebug-handler": "^1.1",
                 "justinrainbow/json-schema": "^3.0 || ^4.0 || ^5.0",
                 "php": "^5.3.2 || ^7.0",
                 "psr/log": "^1.0",
-                "seld/cli-prompt": "^1.0",
                 "seld/jsonlint": "^1.4",
                 "seld/phar-utils": "^1.0",
                 "symfony/console": "^2.7 || ^3.0 || ^4.0",
                 "symfony/filesystem": "^2.7 || ^3.0 || ^4.0",
                 "symfony/finder": "^2.7 || ^3.0 || ^4.0",
                 "symfony/process": "^2.7 || ^3.0 || ^4.0"
+            },
+            "conflict": {
+                "symfony/console": "2.8.38"
             },
             "require-dev": {
                 "phpunit/phpunit": "^4.8.35 || ^5.7",
@@ -106,7 +121,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.6-dev"
+                    "dev-master": "1.9-dev"
                 }
             },
             "autoload": {
@@ -130,28 +145,34 @@
                     "homepage": "http://seld.be"
                 }
             ],
-            "description": "Composer helps you declare, manage and install dependencies of PHP projects, ensuring you have the right stack everywhere.",
+            "description": "Composer helps you declare, manage and install dependencies of PHP projects. It ensures you have the right stack everywhere.",
             "homepage": "https://getcomposer.org/",
             "keywords": [
                 "autoload",
                 "dependency",
                 "package"
             ],
-            "time": "2018-01-05T14:28:42+00:00"
+            "time": "2019-11-01T16:20:17+00:00"
         },
         {
             "name": "composer/semver",
-            "version": "1.4.2",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/semver.git",
-                "reference": "c7cb9a2095a074d131b65a8a0cd294479d785573"
+                "reference": "46d9139568ccb8d9e7cdd4539cab7347568a5e2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/semver/zipball/c7cb9a2095a074d131b65a8a0cd294479d785573",
-                "reference": "c7cb9a2095a074d131b65a8a0cd294479d785573",
-                "shasum": ""
+                "url": "https://api.github.com/repos/composer/semver/zipball/46d9139568ccb8d9e7cdd4539cab7347568a5e2e",
+                "reference": "46d9139568ccb8d9e7cdd4539cab7347568a5e2e",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": "^5.3.2 || ^7.0"
@@ -199,28 +220,33 @@
                 "validation",
                 "versioning"
             ],
-            "time": "2016-08-30T16:08:34+00:00"
+            "time": "2019-03-19T17:25:45+00:00"
         },
         {
             "name": "composer/spdx-licenses",
-            "version": "1.2.0",
+            "version": "1.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/spdx-licenses.git",
-                "reference": "2d899e9b33023c631854f36c39ef9f8317a7ab33"
+                "reference": "7ac1e6aec371357df067f8a688c3d6974df68fa5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/spdx-licenses/zipball/2d899e9b33023c631854f36c39ef9f8317a7ab33",
-                "reference": "2d899e9b33023c631854f36c39ef9f8317a7ab33",
-                "shasum": ""
+                "url": "https://api.github.com/repos/composer/spdx-licenses/zipball/7ac1e6aec371357df067f8a688c3d6974df68fa5",
+                "reference": "7ac1e6aec371357df067f8a688c3d6974df68fa5",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
-                "php": "^5.3.2 || ^7.0"
+                "php": "^5.3.2 || ^7.0 || ^8.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.5",
-                "phpunit/phpunit-mock-objects": "2.3.0 || ^3.0"
+                "phpunit/phpunit": "^4.8.35 || ^5.7 || 6.5 - 7"
             },
             "type": "library",
             "extra": {
@@ -260,7 +286,57 @@
                 "spdx",
                 "validator"
             ],
-            "time": "2018-01-03T16:37:06+00:00"
+            "time": "2019-07-29T10:31:59+00:00"
+        },
+        {
+            "name": "composer/xdebug-handler",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/xdebug-handler.git",
+                "reference": "cbe23383749496fe0f373345208b79568e4bc248"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/xdebug-handler/zipball/cbe23383749496fe0f373345208b79568e4bc248",
+                "reference": "cbe23383749496fe0f373345208b79568e4bc248",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": "^5.3.2 || ^7.0 || ^8.0",
+                "psr/log": "^1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35 || ^5.7 || 6.5 - 8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Composer\\XdebugHandler\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "John Stevenson",
+                    "email": "john-stevenson@blueyonder.co.uk"
+                }
+            ],
+            "description": "Restarts a process without Xdebug.",
+            "keywords": [
+                "Xdebug",
+                "performance"
+            ],
+            "time": "2019-11-06T16:40:04+00:00"
         },
         {
             "name": "gitonomy/gitlib",
@@ -274,7 +350,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/gitonomy/gitlib/zipball/f575b8f7da917ade7890c6aa705fa22545690389",
                 "reference": "f575b8f7da917ade7890c6aa705fa22545690389",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "symfony/process": "^2.3|^3.0"
@@ -318,25 +400,31 @@
         },
         {
             "name": "justinrainbow/json-schema",
-            "version": "5.2.6",
+            "version": "5.2.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/justinrainbow/json-schema.git",
-                "reference": "d283e11b6e14c6f4664cf080415c4341293e5bbd"
+                "reference": "44c6787311242a979fa15c704327c20e7221a0e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/d283e11b6e14c6f4664cf080415c4341293e5bbd",
-                "reference": "d283e11b6e14c6f4664cf080415c4341293e5bbd",
-                "shasum": ""
+                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/44c6787311242a979fa15c704327c20e7221a0e4",
+                "reference": "44c6787311242a979fa15c704327c20e7221a0e4",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=5.3.3"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.1",
+                "friendsofphp/php-cs-fixer": "~2.2.20||~2.15.1",
                 "json-schema/json-schema-test-suite": "1.2.0",
-                "phpunit/phpunit": "^4.8.22"
+                "phpunit/phpunit": "^4.8.35"
             },
             "bin": [
                 "bin/validate-json"
@@ -380,21 +468,27 @@
                 "json",
                 "schema"
             ],
-            "time": "2017-10-21T13:15:38+00:00"
+            "time": "2019-09-25T14:49:45+00:00"
         },
         {
             "name": "nikic/php-parser",
-            "version": "v3.1.4",
+            "version": "v3.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "e57b3a09784f846411aa7ed664eedb73e3399078"
+                "reference": "bb87e28e7d7b8d9a7fda231d37457c9210faf6ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/e57b3a09784f846411aa7ed664eedb73e3399078",
-                "reference": "e57b3a09784f846411aa7ed664eedb73e3399078",
-                "shasum": ""
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/bb87e28e7d7b8d9a7fda231d37457c9210faf6ce",
+                "reference": "bb87e28e7d7b8d9a7fda231d37457c9210faf6ce",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "ext-tokenizer": "*",
@@ -431,21 +525,27 @@
                 "parser",
                 "php"
             ],
-            "time": "2018-01-25T21:31:33+00:00"
+            "time": "2018-02-28T20:30:58+00:00"
         },
         {
             "name": "psr/log",
-            "version": "1.0.2",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d"
+                "reference": "446d54b4cb6bf489fc9d75f55843658e6f25d801"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
-                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
-                "shasum": ""
+                "url": "https://api.github.com/repos/php-fig/log/zipball/446d54b4cb6bf489fc9d75f55843658e6f25d801",
+                "reference": "446d54b4cb6bf489fc9d75f55843658e6f25d801",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=5.3.0"
@@ -453,7 +553,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0.x-dev"
+                    "dev-master": "1.1.x-dev"
                 }
             },
             "autoload": {
@@ -478,69 +578,27 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2016-10-10T12:19:37+00:00"
-        },
-        {
-            "name": "seld/cli-prompt",
-            "version": "1.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Seldaek/cli-prompt.git",
-                "reference": "a19a7376a4689d4d94cab66ab4f3c816019ba8dd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/cli-prompt/zipball/a19a7376a4689d4d94cab66ab4f3c816019ba8dd",
-                "reference": "a19a7376a4689d4d94cab66ab4f3c816019ba8dd",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Seld\\CliPrompt\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jordi Boggiano",
-                    "email": "j.boggiano@seld.be"
-                }
-            ],
-            "description": "Allows you to prompt for user input on the command line, and optionally hide the characters they type",
-            "keywords": [
-                "cli",
-                "console",
-                "hidden",
-                "input",
-                "prompt"
-            ],
-            "time": "2017-03-18T11:32:45+00:00"
+            "time": "2019-11-01T11:05:21+00:00"
         },
         {
             "name": "seld/jsonlint",
-            "version": "1.7.1",
+            "version": "1.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/jsonlint.git",
-                "reference": "d15f59a67ff805a44c50ea0516d2341740f81a38"
+                "reference": "e2e5d290e4d2a4f0eb449f510071392e00e10d19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/d15f59a67ff805a44c50ea0516d2341740f81a38",
-                "reference": "d15f59a67ff805a44c50ea0516d2341740f81a38",
-                "shasum": ""
+                "url": "https://api.github.com/repos/Seldaek/jsonlint/zipball/e2e5d290e4d2a4f0eb449f510071392e00e10d19",
+                "reference": "e2e5d290e4d2a4f0eb449f510071392e00e10d19",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": "^5.3 || ^7.0"
@@ -575,7 +633,7 @@
                 "parser",
                 "validator"
             ],
-            "time": "2018-01-24T12:46:19+00:00"
+            "time": "2019-10-24T14:27:39+00:00"
         },
         {
             "name": "seld/phar-utils",
@@ -589,7 +647,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/Seldaek/phar-utils/zipball/7009b5139491975ef6486545a39f3e6dad5ac30a",
                 "reference": "7009b5139491975ef6486545a39f3e6dad5ac30a",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=5.3"
@@ -633,7 +697,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sensiolabs/ansi-to-html/zipball/8b5d787dca714bd98dd770c078d76528320a8286",
                 "reference": "8b5d787dca714bd98dd770c078d76528320a8286",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=5.3.0"
@@ -667,17 +737,23 @@
         },
         {
             "name": "symfony/console",
-            "version": "v3.4.3",
+            "version": "v3.4.33",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "8394c8ef121949e8f858f13bc1e34f05169e4e7d"
+                "reference": "c7edffb26b29cae972ca4afccb610a38ce8d0ccf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/8394c8ef121949e8f858f13bc1e34f05169e4e7d",
-                "reference": "8394c8ef121949e8f858f13bc1e34f05169e4e7d",
-                "shasum": ""
+                "url": "https://api.github.com/repos/symfony/console/zipball/c7edffb26b29cae972ca4afccb610a38ce8d0ccf",
+                "reference": "c7edffb26b29cae972ca4afccb610a38ce8d0ccf",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": "^5.5.9|>=7.0.8",
@@ -687,6 +763,9 @@
             "conflict": {
                 "symfony/dependency-injection": "<3.4",
                 "symfony/process": "<3.3"
+            },
+            "provide": {
+                "psr/log-implementation": "1.0"
             },
             "require-dev": {
                 "psr/log": "~1.0",
@@ -732,21 +811,27 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2018-01-03T07:37:34+00:00"
+            "time": "2019-10-24T15:33:53+00:00"
         },
         {
             "name": "symfony/debug",
-            "version": "v3.4.3",
+            "version": "v3.4.33",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/debug.git",
-                "reference": "603b95dda8b00020e4e6e60dc906e7b715b1c245"
+                "reference": "f72e33fdb1170b326e72c3157f0cd456351dd086"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/debug/zipball/603b95dda8b00020e4e6e60dc906e7b715b1c245",
-                "reference": "603b95dda8b00020e4e6e60dc906e7b715b1c245",
-                "shasum": ""
+                "url": "https://api.github.com/repos/symfony/debug/zipball/f72e33fdb1170b326e72c3157f0cd456351dd086",
+                "reference": "f72e33fdb1170b326e72c3157f0cd456351dd086",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": "^5.5.9|>=7.0.8",
@@ -788,24 +873,31 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "https://symfony.com",
-            "time": "2018-01-03T17:14:19+00:00"
+            "time": "2019-10-24T15:33:53+00:00"
         },
         {
             "name": "symfony/filesystem",
-            "version": "v3.4.3",
+            "version": "v3.4.33",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "e078773ad6354af38169faf31c21df0f18ace03d"
+                "reference": "00e3a6ddd723b8bcfe4f2a1b6f82b98eeeb51516"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/e078773ad6354af38169faf31c21df0f18ace03d",
-                "reference": "e078773ad6354af38169faf31c21df0f18ace03d",
-                "shasum": ""
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/00e3a6ddd723b8bcfe4f2a1b6f82b98eeeb51516",
+                "reference": "00e3a6ddd723b8bcfe4f2a1b6f82b98eeeb51516",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
-                "php": "^5.5.9|>=7.0.8"
+                "php": "^5.5.9|>=7.0.8",
+                "symfony/polyfill-ctype": "~1.8"
             },
             "type": "library",
             "extra": {
@@ -837,21 +929,27 @@
             ],
             "description": "Symfony Filesystem Component",
             "homepage": "https://symfony.com",
-            "time": "2018-01-03T07:37:34+00:00"
+            "time": "2019-08-20T13:31:17+00:00"
         },
         {
             "name": "symfony/finder",
-            "version": "v3.4.3",
+            "version": "v3.4.33",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "613e26310776f49a1773b6737c6bd554b8bc8c6f"
+                "reference": "3e915e5ce305f8bc8017597f71f1f4095092ddf8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/613e26310776f49a1773b6737c6bd554b8bc8c6f",
-                "reference": "613e26310776f49a1773b6737c6bd554b8bc8c6f",
-                "shasum": ""
+                "url": "https://api.github.com/repos/symfony/finder/zipball/3e915e5ce305f8bc8017597f71f1f4095092ddf8",
+                "reference": "3e915e5ce305f8bc8017597f71f1f4095092ddf8",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": "^5.5.9|>=7.0.8"
@@ -886,21 +984,91 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "https://symfony.com",
-            "time": "2018-01-03T07:37:34+00:00"
+            "time": "2019-10-30T12:43:22+00:00"
         },
         {
-            "name": "symfony/polyfill-mbstring",
-            "version": "v1.6.0",
+            "name": "symfony/polyfill-ctype",
+            "version": "v1.12.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296"
+                "url": "https://github.com/symfony/polyfill-ctype.git",
+                "reference": "550ebaac289296ce228a706d0867afc34687e3f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296",
-                "reference": "2ec8b39c38cb16674bbf3fea2b6ce5bf117e1296",
-                "shasum": ""
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/550ebaac289296ce228a706d0867afc34687e3f4",
+                "reference": "550ebaac289296ce228a706d0867afc34687e3f4",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "suggest": {
+                "ext-ctype": "For best performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.12-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Ctype\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gert de Pagter",
+                    "email": "BackEndTea@gmail.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill for ctype functions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "ctype",
+                "polyfill",
+                "portable"
+            ],
+            "time": "2019-08-06T08:03:45+00:00"
+        },
+        {
+            "name": "symfony/polyfill-mbstring",
+            "version": "v1.12.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-mbstring.git",
+                "reference": "b42a2f66e8f1b15ccf25652c3424265923eb4f17"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/b42a2f66e8f1b15ccf25652c3424265923eb4f17",
+                "reference": "b42a2f66e8f1b15ccf25652c3424265923eb4f17",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=5.3.3"
@@ -911,7 +1079,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.6-dev"
+                    "dev-master": "1.12-dev"
                 }
             },
             "autoload": {
@@ -945,21 +1113,27 @@
                 "portable",
                 "shim"
             ],
-            "time": "2017-10-11T12:05:26+00:00"
+            "time": "2019-08-06T08:03:45+00:00"
         },
         {
             "name": "symfony/process",
-            "version": "v3.4.3",
+            "version": "v3.4.33",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "ff69f110c6b33fd33cd2089ba97d6112f44ef0ba"
+                "reference": "c19da50bc3e8fa7d60628fdb4ab5d67de534cf3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/ff69f110c6b33fd33cd2089ba97d6112f44ef0ba",
-                "reference": "ff69f110c6b33fd33cd2089ba97d6112f44ef0ba",
-                "shasum": ""
+                "url": "https://api.github.com/repos/symfony/process/zipball/c19da50bc3e8fa7d60628fdb4ab5d67de534cf3e",
+                "reference": "c19da50bc3e8fa7d60628fdb4ab5d67de534cf3e",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": "^5.5.9|>=7.0.8"
@@ -994,24 +1168,31 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2018-01-03T07:37:34+00:00"
+            "time": "2019-10-24T15:33:53+00:00"
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.8.33",
+            "version": "v2.8.50",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",
-                "reference": "be720fcfae4614df204190d57795351059946a77"
+                "reference": "02c1859112aa779d9ab394ae4f3381911d84052b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/yaml/zipball/be720fcfae4614df204190d57795351059946a77",
-                "reference": "be720fcfae4614df204190d57795351059946a77",
-                "shasum": ""
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/02c1859112aa779d9ab394ae4f3381911d84052b",
+                "reference": "02c1859112aa779d9ab394ae4f3381911d84052b",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
-                "php": ">=5.3.9"
+                "php": ">=5.3.9",
+                "symfony/polyfill-ctype": "~1.8"
             },
             "type": "library",
             "extra": {
@@ -1043,7 +1224,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
-            "time": "2018-01-03T07:36:31+00:00"
+            "time": "2018-11-11T11:18:13+00:00"
         }
     ],
     "packages-dev": [
@@ -1059,7 +1240,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/doctrine/instantiator/zipball/8e884e78f9f0eb1329e445619e04456e64d8051d",
                 "reference": "8e884e78f9f0eb1329e445619e04456e64d8051d",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=5.3,<8.0-DEV"
@@ -1113,7 +1300,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/eabf68b476ac7d0f73793aada060f1c1a9bf8979",
                 "reference": "eabf68b476ac7d0f73793aada060f1c1a9bf8979",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=5.3.3",
@@ -1175,7 +1368,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/php-file-iterator/zipball/acd690379117b042d1c8af1fafd61bde001bf6bb",
                 "reference": "acd690379117b042d1c8af1fafd61bde001bf6bb",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=5.3.3"
@@ -1220,7 +1419,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/php-text-template/zipball/31f8b717e51d9a2afca6c9f046f5d69fc27c8686",
                 "reference": "31f8b717e51d9a2afca6c9f046f5d69fc27c8686",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=5.3.3"
@@ -1261,7 +1466,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/php-timer/zipball/3dcf38ca72b158baf0bc245e9184d3fdffa9c46f",
                 "reference": "3dcf38ca72b158baf0bc245e9184d3fdffa9c46f",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": "^5.3.3 || ^7.0"
@@ -1310,7 +1521,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/1ce90ba27c42e4e44e6d8458241466380b51fa16",
                 "reference": "1ce90ba27c42e4e44e6d8458241466380b51fa16",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "ext-tokenizer": "*",
@@ -1359,7 +1576,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/2e8580deebb7d1ac92ac878595e6bffe01069c2a",
                 "reference": "2e8580deebb7d1ac92ac878595e6bffe01069c2a",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "ext-dom": "*",
@@ -1431,7 +1654,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/ac8e7a3db35738d56ee9a76e78a4e03d97628983",
                 "reference": "ac8e7a3db35738d56ee9a76e78a4e03d97628983",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "doctrine/instantiator": "^1.0.2",
@@ -1473,6 +1702,7 @@
                 "mock",
                 "xunit"
             ],
+            "abandoned": true,
             "time": "2015-10-02T06:51:40+00:00"
         },
         {
@@ -1487,7 +1717,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/2b7424b55f5047b47ac6e5ccb20b2aea4011d9be",
                 "reference": "2b7424b55f5047b47ac6e5ccb20b2aea4011d9be",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=5.3.3",
@@ -1551,7 +1787,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/7f066a26a962dbe58ddea9f72a4e82874a3975a4",
                 "reference": "7f066a26a962dbe58ddea9f72a4e82874a3975a4",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": "^5.3.3 || ^7.0"
@@ -1603,7 +1845,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/be2c607e43ce4c89ecd60e75c6a85c126e754aea",
                 "reference": "be2c607e43ce4c89ecd60e75c6a85c126e754aea",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": "^5.3.3 || ^7.0"
@@ -1653,7 +1901,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/exporter/zipball/42c4c2eec485ee3e159ec9884f95b431287edde4",
                 "reference": "42c4c2eec485ee3e159ec9884f95b431287edde4",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=5.3.3",
@@ -1720,7 +1974,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/global-state/zipball/bc37d50fea7d017d3d340f230811c9f1d7280af4",
                 "reference": "bc37d50fea7d017d3d340f230811c9f1d7280af4",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=5.3.3"
@@ -1771,7 +2031,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/recursion-context/zipball/b19cc3298482a335a95f3016d2f8a6950f0fbcd7",
                 "reference": "b19cc3298482a335a95f3016d2f8a6950f0fbcd7",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "require": {
                 "php": ">=5.3.3"
@@ -1824,7 +2090,13 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/version/zipball/58b3a85e7999757d6ad81c787a1fbf5ff6c628c6",
                 "reference": "58b3a85e7999757d6ad81c787a1fbf5ff6c628c6",
-                "shasum": ""
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
             },
             "type": "library",
             "autoload": {
