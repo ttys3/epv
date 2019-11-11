@@ -1,0 +1,3 @@
+#!/bin/sh
+
+php $HOME/repo/php/phpbb/epv/src/EPV.php run $*
