@@ -200,6 +200,10 @@ class FileLoader
 			default:
 
 				$file = basename($fileName);
+				// fixup for phpunit.xml.dist
+				if ($extension === 'dist' && substr($file, -strlen(".xml.dist")) === ".xml.dist") {
+					return new XmlFile($this->debug, $fileName, $this->rundir);
+				}
 				$this->output->addMessage(Output::WARNING, "Can't detect the file type for $file, handling it as a binary file.");
 
 				return new BinaryFile($this->debug, $fileName, $this->rundir);
