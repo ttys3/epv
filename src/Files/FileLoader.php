@@ -70,7 +70,9 @@ class FileLoader
 			{
 				// If it is a readme file it is ok.
 				// Otherwise add notice.
-				if (strtolower($fileName) !== 'readme')
+				if (strtolower(basename($fileName)) !== 'readme'
+				&& strtolower(basename($fileName)) !== 'readme.md'
+				&& basename($fileName) !== 'Makefile')
 				{
 					$this->output->addMessage(Output::NOTICE, sprintf("The file %s has no valid extension.", basename($fileName)));
 				}
